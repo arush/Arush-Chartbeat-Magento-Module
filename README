@@ -1,0 +1,22 @@
+To install, copy the files in the repo to your corresponding Magento folders, then copy the following code into the following files:
+
+1column.phtml, 2column-left.phtml, 2column-right.phtml, 3column.phtml
+…just beneath the <head> tag:
+
+<!-- Chartbeat module -->
+<?php 	if(Mage::getStoreConfig('analytics/chartbeat/analytics_chartbeat_on')) {
+		echo Mage::getStoreConfig('analytics/chartbeat/analytics_chartbeat_head_code'); }?>
+<!-- END Chartbeat module -->
+
+
+footer.phtml
+…right at the bottom
+
+<!-- Chartbeat module -->
+
+<?php 	if(Mage::getStoreConfig('analytics/chartbeat/analytics_chartbeat_on')) {
+		echo Mage::getStoreConfig('analytics/chartbeat/analytics_chartbeat_foot_code');
+	}
+?>
+
+<!-- END Chartbeat module -->
