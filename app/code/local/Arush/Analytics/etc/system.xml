@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+	<arush translate="label" module="analytics">
+	    <label>Arush</label>
+	    <sort_order>100</sort_order>
+	</arush>
+    </tabs>
+    <sections>
+        <analytics translate="label comment" module="analytics">
+            <tab>arush</tab>
+            <label>Chartbeat</label>
+            <frontend_type>text</frontend_type>
+            <sort_order>20</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <chartbeat translate="label comment" module="analytics">
+                    <label>Chartbeat Snippets</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+		    <fields>
+                        <analytics_chartbeat_on translate="label">
+                            <label>Chartbeat On</label>
+                            <frontend_type>select</frontend_type>
+			    <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[]]></comment>
+                        </analytics_chartbeat_on>
+			<analytics_chartbeat_head_code translate="label">
+                            <label>Chartbeat Head Snippet</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[]]></comment>
+                        </analytics_chartbeat_head_code>
+			<analytics_chartbeat_foot_code translate="label">
+                            <label>Chartbeat Foot Snippet</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[]]></comment>
+                        </analytics_chartbeat_foot_code>
+		    </fields>
+		</chartbeat>
+				
+            </groups>
+        </analytics>
+    </sections>
+</config>

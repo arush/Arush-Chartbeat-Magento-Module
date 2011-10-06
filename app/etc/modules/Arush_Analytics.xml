@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+<modules>
+<Arush_Analytics>
+<active>true</active>
+<codePool>local</codePool>
+</Arush_Analytics>
+</modules>
+</config>
